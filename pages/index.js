@@ -24,7 +24,7 @@ export default function Home({data}) {
 
 export async function getServerSideProps(){
   let d;
-  d = await axios.get('http://localhost:3000/api/'); 
+  d = await axios.get('https://port-0-next-mysql-3a9t2ble82e01s.sel3.cloudtype.app/api/'); 
   
   return {
     props:{data:d.data},
